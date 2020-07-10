@@ -1,2 +1,4 @@
 name: Sequoyah Walters
 markdown: kramdown
+
+theme: jekyll-theme-midnight
