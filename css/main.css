@@ -1,9 +1,9 @@
 body {
-    margin-left: 250px;
-    margin-right: 55px;;
-    margin-top: 20px;
+    margin-left: 12em;
+    margin-right: 8vw;
+    margin-top: 1em;
     margin-bottom: auto;
-    min-width: 480px;
+    min-width: 30em;
     text-align: justify;
     background-color: #333333;
 }
@@ -14,25 +14,42 @@ nav ul {
     font-weight: bold;
     font-size: 1.3em;
     position: fixed;
-    margin-right: 10px;
-    top: 8em;
-    left: 3.3em;
+    top: 15vh;
+    left: .9em;
 }
-nav ul li {
+nav ul li{
     display: block;
-    margin-bottom: 60px;
-    margin-right: 0px;
+    margin-bottom: 3vh;
+    text-align: right;
+}
+ul.networks li {
+    display: block;
+    margin-bottom: 3vh;
     text-align: right;
 }
 nav li a:hover{
   text-decoration: none;
-  outline: 5px solid #dddddd;
-  outline-offset: 5px
+  outline: .4em solid #dddddd;
+  outline-offset: 0.4em
 }
-li a.networks:hover{
+ul.networks{
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  padding: 0px;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.3em;
+  position: fixed;
+  bottom: 8vh;
+  left: 2em;
+}
+ul.networks li a{
+  font-size: .8em;
+  color: #dddddd;
+}
+ul.networks li a:hover{
     text-decoration: none;
-    outline: 3px solid #76a4ff;
-    outline-offset: 4px;
+    outline: .3em solid #76a4ff;
+    outline-offset: 0.3em;
 }
 a, ol {
     text-decoration: none;
@@ -45,7 +62,9 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #76a4ff;
-    margin-top: 5px;
+    padding-bottom: 0.5em;
+    border-bottom: 4px solid #707070;
+    text-align: left;
 }
 h2{
     font-family:'Sans-Serif';
@@ -72,17 +91,11 @@ ul.proj {
     font-size: 1.5em;
     color: #dddddd;
 }
-ul.proj img:hover {
-
-}
-.networks {
-    font-size: .8em;
-    color: #dddddd;
-}
 .left-picture{
     float: left;
     margin-right: 0.6em;
     margin-bottom: 0.4em;
+    display: inline-block;
 }
 .center {
     display: block;
@@ -94,26 +107,24 @@ ul.proj img:hover {
   border-left: 4px solid #707070;
   height: auto;
   position: fixed;
-  left: 190px;
+  left: 8em;
   top: 0px;
   bottom: 0px;
 }
 .hline1 {
   border-top: 4px solid #707070;
   position: fixed;
-  width: 190px;
+  width: 8em;
   left: 0px;
-  bottom: 410px;
+  bottom: 44vh;
 }
 .hline2 {
+  display: none;
   border-top: 4px solid #707070;
   position: relative;
   left: 55px;
   top: 100px;
 }
-.hline3 {
-  border-top: 4px solid #707070;
-  position: relative;
-  right: 250px;
-  top: 96px;
+td {
+  vertical-align: top;
 }
