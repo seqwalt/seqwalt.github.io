@@ -1,0 +1,14 @@
+---
+layout: default
+title: Projects
+---
+	<ul class="proj">
+		{% for project in site.project_pages %}
+			<li>
+			<img src="{{ project.thumbnail }}" alt="{{ project.title }}" width="250" class="left-picture"/>
+			<!-- <a href="{{ project.url }}"><h2>{{ project.title }}</h2></a> -->
+			<h2>{{ project.title }}</h2>{{ project.excerpt }} <!-- uncomment the above line to be able to
+			access project links -->
+			</li><br><br><br>
+		{% endfor %}
+	</ul>

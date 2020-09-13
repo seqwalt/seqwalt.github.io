@@ -1,29 +1,38 @@
 <!DOCTYPE html>
+
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<!-- Add ability to use LaTex using MathJax -->
+			<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+			<script type="text/javascript"
+				id="MathJax-script" async
+				src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+			</script>
 		</head>
 		<body>
 			<nav>
 	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
+		        	<li><a href="/">About</a></li>
+							<li><a href="/research">Research</a></li>
+	        		<li><a href="/projects">Projects</a></li>
 	        		<li><a href="/blog">Blog</a></li>
+							<br><br><br><br><br>
+							<li><a href="mailto:snwalters2@wisc.edu" class="networks">Email</a></li>
+	        		<li><a href="https://github.com/seqwalt" class="networks">Github</a></li>
+							<li><a href="https://www.linkedin.com/in/sequoyah-walters" class="networks">LinkedIn</a></li>
 	    		</ul>
 			</nav>
+			<div class="vline"></div>
+			<div class="hline1"></div>
+			<div class="hline2"></div><div class="hline3"></div>
+			<h1>{{ page.title }}</h1><br>
 			<div class="container">
-			
+
 			{{ content }}
-			
+
 			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:place_holder@email.com">place_holder@email.com</a></li>
-	        		<li><a href="https://github.com/seqwalt">github.com/seqwalt</a></li>
-				</ul>
-			</footer>
 		</body>
 	</html>

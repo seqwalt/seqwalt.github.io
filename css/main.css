@@ -1,20 +1,42 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin-left: 250px;
+    margin-right: 55px;;
+    margin-top: 20px;
+    margin-bottom: auto;
+    min-width: 480px;
+    text-align: justify;
+    background-color: #333333;
 }
-nav ul, footer ul {
+nav ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    font-size: 1.3em;
+    position: fixed;
+    margin-right: 10px;
+    top: 8em;
+    left: 3.3em;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+nav ul li {
+    display: block;
+    margin-bottom: 60px;
+    margin-right: 0px;
+    text-align: right;
 }
-a {
+nav li a:hover{
+  text-decoration: none;
+  outline: 5px solid #dddddd;
+  outline-offset: 5px
+}
+li a.networks:hover{
     text-decoration: none;
-    color: #999;
+    outline: 3px solid #76a4ff;
+    outline-offset: 4px;
+}
+a, ol {
+    text-decoration: none;
+    color: #76a4ff;
 }
 a:hover {
     text-decoration: underline;
@@ -22,22 +44,76 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: #76a4ff;
+    margin-top: 5px;
+}
+h2{
+    font-family:'Sans-Serif';
+    color: #76a4ff;
+    text-align: center;
+    margin-bottom: 0px;
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: #dddddd;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin-left: -40px;
     font-size: 1.5em;
 }
-
 ul.posts li {
     list-style: none;
+    color: #dddddd;
+}
+ul.proj {
+    margin-left: -40px;
+    list-style: none;
+    font-size: 1.5em;
+    color: #dddddd;
+}
+ul.proj img:hover {
+
+}
+.networks {
+    font-size: .8em;
+    color: #dddddd;
+}
+.left-picture{
+    float: left;
+    margin-right: 0.6em;
+    margin-bottom: 0.4em;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.vline {
+  border-left: 4px solid #707070;
+  height: auto;
+  position: fixed;
+  left: 190px;
+  top: 0px;
+  bottom: 0px;
+}
+.hline1 {
+  border-top: 4px solid #707070;
+  position: fixed;
+  width: 190px;
+  left: 0px;
+  bottom: 410px;
+}
+.hline2 {
+  border-top: 4px solid #707070;
+  position: relative;
+  left: 55px;
+  top: 100px;
+}
+.hline3 {
+  border-top: 4px solid #707070;
+  position: relative;
+  right: 250px;
+  top: 96px;
 }
