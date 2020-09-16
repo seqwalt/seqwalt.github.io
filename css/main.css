@@ -103,6 +103,11 @@ ul.proj {
     margin-right: auto;
     width: 100%;
 }
+.embed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .vline {
   border-left: 4px solid #707070;
   height: auto;
