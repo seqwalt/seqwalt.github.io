@@ -16,3 +16,17 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
+
+## Local testing ([link](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll))
+Run once:
+- ```
+sudo apt install ruby-bundler ruby-dev
+bundle install
+```
+- Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+To test website:
+- ```
+bundle exec jekyll serve
+```
+- Preview site at [http://localhost:4000](http://localhost:4000).
