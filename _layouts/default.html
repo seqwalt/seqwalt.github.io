@@ -1,39 +1,62 @@
 <!DOCTYPE html>
+<html lang="{{ site.lang }}">
 
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<!-- Add ability to use LaTex using MathJax -->
-			<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-			<script type="text/javascript"
-				id="MathJax-script" async
-				src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-			</script>
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-		        	<li><a href="/">About</a></li>
-							<li><a href="/research">Research</a></li>
-	        		<li><a href="/projects">Projects</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<ul class="networks">
-					<li><a href="mailto:snwalters2@wisc.edu">Email</a></li>
-					<li><a href="https://github.com/seqwalt">Github</a></li>
-					<li><a href="https://www.linkedin.com/in/sequoyah-walters">LinkedIn</a></li>
-			</ul>
-			<div class="vline"></div>
-			<div class="hline1"></div>
-			<div class="hline2"></div>
-			<h1>{{ page.title }}</h1>
-			<div class="container">
+  <!-- Head -->
+  <head>
+  {%- if page.redirect -%}
+    <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
+  {%- endif -%}
+  {% include head.html %}
+  </head>
 
-			{{ content }}
+  <!-- Body -->
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
-			</div><!-- /.container -->
-		</body>
-	</html>
+    <!-- Header -->
+    {%- include header.html %}
+
+    <!-- Content -->
+    <div class="container mt-5">
+      {% if page.toc and page.toc.sidebar %}
+        {% if page.toc.sidebar == "right" %}
+        <div class="row">
+          <!-- main content area -->
+          <div class="col-sm-9">
+            {{ content }}
+          </div>
+          <!-- sidebar, which will move to the top on a small screen -->
+          <div class="col-sm-3">
+            <nav id="toc-sidebar" class="sticky-top"></nav>
+          </div>
+        </div>
+        {% else %}
+        <div class="row">
+          <!-- sidebar, which will move to the top on a small screen -->
+          <div class="col-sm-3">
+            <nav id="toc-sidebar" class="sticky-top"></nav>
+          </div>
+          <!-- main content area -->
+          <div class="col-sm-9">
+            {{ content }}
+          </div>
+        </div>
+        {% endif %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </div>
+
+    <!-- Footer -->
+    {%- include footer.html %}
+
+    <!-- JavaScripts -->
+    {% include scripts/jquery.html %}
+    {% include scripts/bootstrap.html %}
+    {% include scripts/masonry.html %}
+    {% include scripts/misc.html %}
+    {% include scripts/badges.html %}
+    {% include scripts/mathjax.html %}
+    {% include scripts/analytics.html %}
+    {% include scripts/progressBar.html %}
+  </body>
+</html>
