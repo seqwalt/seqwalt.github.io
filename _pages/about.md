@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: <strong>Robotics Research</strong> @ <a href='https://xu.me.wisc.edu/'>UW ARC Lab</a>
+subtitle: <strong>Robotic Perception and Control</strong> @ <a href='https://xu.me.wisc.edu/'>UW ARC Lab</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic_quad.jpg
   image_circular: false # crops the image to make it circular
   address:
 
@@ -16,8 +16,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a recent graduate of the Autonomous & Resilient Controls Laboratory ([ARC Lab](https://xu.me.wisc.edu/)) at [UW-Madison](https://en.wikipedia.org/wiki/University_of_Wisconsin%E2%80%93Madison) where I conducted my master's research in control theory and robotic perception, advised by [Xiangru Xu](https://sites.google.com/site/xiangruxuhome/). My thesis work focuses on vision-based landing of a quadcopter with field-of-view constraints.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Prior to joining UW-Madison as a student, I spent a [summer](https://gers.engr.wisc.edu/sure.php) there performing gait analysis for a robotic lower-limb prosthetic in the [UW BADGER Lab](https://uwbadgerlab.engr.wisc.edu/) directed by [Peter Adamczyk](https://uwbadgerlab.engr.wisc.edu/lab-members-new/peter-adamczyk/). I earned a bachelor's degree in physics at [West Chester University](https://en.wikipedia.org/wiki/West_Chester_University) where I carried out aerosol characerization research with advisor [Kevin Aptowicz](https://www.wcupa.edu/sciences-mathematics/physics/kAptowicz/default.aspx).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+In my spare time I enjoy flipping (and eating) crepes, building robots and practicing Judo. My resume can be viewed [here](assets/pdf/CV.pdf).
