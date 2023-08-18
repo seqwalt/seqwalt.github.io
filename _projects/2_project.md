@@ -1,11 +1,10 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: first robot
+description: A differential drive robot that navigates using a camera
 img: assets/img/3.jpg
 importance: 2
-category: work
-giscus_comments: true
+category:
 ---
 
 Every project has a beautiful feature showcase page.

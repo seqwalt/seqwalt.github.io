@@ -2,7 +2,7 @@
 layout: page
 title: VIO drone
 description: VIO quadcopter for FOV-constrained landing.
-img: assets/img/full_quad_no_background.png
+img: assets/img/vioquad_blue_background.png
 importance: 1
 category:
 related_publications: walters2023vision-based
