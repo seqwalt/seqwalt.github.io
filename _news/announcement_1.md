@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Successfully defended my Master's thesis :mortar_board:
+Successfully defended my master's thesis :mortar_board:
