@@ -2,7 +2,7 @@
 layout: page
 title: first robot
 description: A differential drive robot that navigates using a camera
-img: assets/img/3.jpg
+img: assets/img/SLAM_robot.jpg
 importance: 2
 category:
 ---

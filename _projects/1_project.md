@@ -2,17 +2,13 @@
 layout: page
 title: VIO drone
 description: VIO quadcopter for FOV-constrained landing.
-img: assets/img/vioquad_blue_background.png
+img: assets/img/full_quad.jpg
 importance: 1
 category:
 related_publications: walters2023vision-based
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This quadcopter was designed to use visual-inertial odometry (VIO) to estimate its pose, and the AprilTag algorithm to estimate landing pad location. 
 
     ---
     layout: page
