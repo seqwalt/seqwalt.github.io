@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Monocular Robot
+title: Monobot
 description: A differential drive robot that has a monocular camera
-img: assets/img/SLAM_robot.jpg
+img: assets/img/project_monobot/monobot.jpg
 importance: 2
 category:
 ---

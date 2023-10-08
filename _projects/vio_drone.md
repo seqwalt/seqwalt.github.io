@@ -2,7 +2,7 @@
 layout: page
 title: Precision Landing
 description: VIO quadcopter for FOV-constrained landing.
-img: assets/img/full_quad.jpg
+img: assets/img/project_vio_quad/full_quad.jpg
 importance: 1
 category:
 related_publications:
