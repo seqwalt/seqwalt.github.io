@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Monobot
-description: A differential drive robot that has a monocular camera
-img: assets/img/project_monobot/monobot.jpg
-importance: 2
+title: Balance Bot
+description: An inverted pendulum robot using an IMU and encoders
+img: assets/img/project_balance_bot/balance_bot.png
+importance: 3
 category:
 ---
 
