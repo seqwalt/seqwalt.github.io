@@ -25,7 +25,22 @@ Monobot consists of two continuous rotation servo motors, a Raspberry Pi (RPi) 3
 </div>
 
 #### Extended Kalman Filter
-*Explain implemented EKF here*
+The dynamics of the differential-drive robot are:
+$$
+\begin{equation}
+\begin{bmatrix}
+\dot x\\
+\dot y\\
+\dot \psi
+\end{bmatrix}
+=
+\begin{bmatrix}
+x\cos(\psi)\\
+y\cos(\psi)\\
+\omega
+\end{bmatrix}
+\end{equation}
+$$
 
 #### Experiment
 
