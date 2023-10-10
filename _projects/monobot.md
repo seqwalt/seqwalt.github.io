@@ -25,22 +25,23 @@ Monobot consists of two continuous rotation servo motors, a Raspberry Pi (RPi) 3
 </div>
 
 #### Extended Kalman Filter
-The dynamics of the differential-drive robot are:
+**Process Dynamics**  
+The process dynamics are continuous and nonlinear:
+
 $$
-\begin{equation}
-\begin{bmatrix}
-\dot x\\
-\dot y\\
-\dot \psi
-\end{bmatrix}
-=
-\begin{bmatrix}
-x\cos(\psi)\\
-y\cos(\psi)\\
-\omega
-\end{bmatrix}
-\end{equation}
+  \dot{\mathbf{x}} = f(\mathbf{x}, \mathbf{u}, \mathbf{w})
+  = \begin{bmatrix} \dot x_{ego} \\ \dot y_{ego} \\ \dot \psi \\ \dot x_1 \\ \dot y_1 \\ \vdots \\ \dot x_n \\ \dot y_n \end{bmatrix}
+  = \begin{bmatrix} v\cos(\psi) \\ v\sin(\psi) \\ \omega \\ 0 \\ 0 \\ \vdots \\ 0 \\ 0 \end{bmatrix} + \mathbf{w},\quad \mathbf{u} = \begin{bmatrix} v \\ \omega \end{bmatrix},
 $$
+
+where ($$x_{ego},\,y_{ego}$$) is robot position, $$\psi$$ is robot heading angle, and the control inputs $$v$$ and $$\omega$$ are speed and turn rate, respectively. The position of the $$i$$-th AprilTag marker is denoted by ($$x_i,\,y_i$$), and the process noise vector is $$\mathbf{w}$$. Note $$n+1$$ markers are placed in the environment, where the first marker defines the origin such that ($$x_0,\,y_0$$) $$:=$$ ($$0,\,0$$).
+
+A 4-th order Runge-Kutta integration scheme (RK4) is used for the **EKF propogation step**. Given state $$\mathbf{x}_k$$ and control $$\mathbf{u}_k$$ at time $$t_k,$$ RK4 can be used to estimate state $$\mathbf{x}_{k+1}$$ at time $$t_{k+1}:$$
+
+$$\mathbf{x}_{k+1} \approx F_{RK4}(\mathbf{x}_k, \mathbf{u}_k)$$
+
+**Measurement Equation**  
+
 
 #### Experiment
 
