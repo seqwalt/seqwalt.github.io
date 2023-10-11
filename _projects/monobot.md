@@ -30,11 +30,11 @@ The process dynamics are continuous and nonlinear:
 
 $$
   \dot{\mathbf{x}} = f(\mathbf{x}, \mathbf{u}, \mathbf{w})
-  = \begin{bmatrix} \dot x_{ego} \\ \dot y_{ego} \\ \dot \psi \\ \dot x_1 \\ \dot y_1 \\ \vdots \\ \dot x_n \\ \dot y_n \end{bmatrix}
-  = \begin{bmatrix} v\cos(\psi) \\ v\sin(\psi) \\ \omega \\ 0 \\ 0 \\ \vdots \\ 0 \\ 0 \end{bmatrix} + \mathbf{w},\quad \mathbf{u} = \begin{bmatrix} v \\ \omega \end{bmatrix},
+  = \begin{bmatrix} \dot x_{ego} \\ \dot y_{ego} \\ \dot \psi_{ego} \\ \dot x_1 \\ \dot y_1 \\ \vdots \\ \dot x_n \\ \dot y_n \end{bmatrix}
+  = \begin{bmatrix} v\cos(\psi_{ego}) \\ v\sin(\psi_{ego}) \\ \omega \\ 0 \\ 0 \\ \vdots \\ 0 \\ 0 \end{bmatrix} + \mathbf{w},\quad \mathbf{u} = \begin{bmatrix} v \\ \omega \end{bmatrix},
 $$
 
-where ($$x_{ego},\,y_{ego}$$) is robot position, $$\psi$$ is robot heading angle, and the control inputs $$v$$ and $$\omega$$ are speed and turn rate, respectively. The position of the $$i$$-th AprilTag marker is denoted by ($$x_i,\,y_i$$), and the process noise vector is $$\mathbf{w}$$. Note $$n+1$$ markers are placed in the environment, where the first marker defines the origin such that ($$x_0,\,y_0$$) $$:=$$ ($$0,\,0$$).
+where ($$x_{ego},\,y_{ego}$$) is robot position, $$\psi_{ego}$$ is robot heading angle, and the control inputs $$v$$ and $$\omega$$ are speed and turn rate, respectively. The position of the $$i$$-th AprilTag marker is denoted by ($$x_i,\,y_i$$), and the process noise vector is $$\mathbf{w}$$. Note $$n+1$$ markers are placed in the environment, where the first marker defines the origin such that ($$x_0,\,y_0$$) $$:=$$ ($$0,\,0$$).
 
 A 4-th order Runge-Kutta integration scheme (RK4) is used for the **EKF propogation step**. Given state $$\mathbf{x}_k$$ and control $$\mathbf{u}_k$$ at time $$t_k,$$ RK4 can be used to estimate state $$\mathbf{x}_{k+1}$$ at time $$t_{k+1}:$$
 
@@ -42,6 +42,15 @@ $$\mathbf{x}_{k+1} \approx F_{RK4}(\mathbf{x}_k, \mathbf{u}_k)$$
 
 **Measurement Equation**  
 
+$$
+h_i(\mathbf{x}, \mathbf{v}) =
+\begin{bmatrix}
+(x_i - x_{ego})\cos(\psi_{ego}) + (y_i - y_{ego})\sin(\psi_{ego}) \\
+(y_i - y_{ego})\cos(\psi_{ego}) - (x_i - x_{ego})\sin(\psi_{ego}) \\
+\psi_i^W - \psi_{ego}
+\end{bmatrix}
++ \mathbf{v}
+$$
 
 #### Experiment
 
