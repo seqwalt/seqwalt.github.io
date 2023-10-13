@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Monobot
-description: Monocular robot using AprilTag EKF for pose estimation.
+description: Monocular robot using AprilTag EKF for pose estimation
 img: assets/img/project_monobot/monobot.jpg
 importance: 2
 category:
