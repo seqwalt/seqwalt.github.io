@@ -20,4 +20,4 @@ I'm a recent graduate of the Autonomous & Resilient Controls Laboratory ([ARC La
 
 Prior to joining UW-Madison as a student, I spent a [summer](https://gers.engr.wisc.edu/sure.php) there performing gait analysis for a robotic lower-limb prosthetic in the [UW BADGER Lab](https://uwbadgerlab.engr.wisc.edu/) directed by [Peter Adamczyk](https://uwbadgerlab.engr.wisc.edu/lab-members-new/peter-adamczyk/). I earned a bachelor's degree in physics at [West Chester University](https://www.wcupa.edu/) where I carried out aerosol characterization research with advisor [Kevin Aptowicz](https://www.wcupa.edu/sciences-mathematics/physics/kAptowicz/default.aspx).
 
-In my spare time I enjoy flipping (and eating) crepes, building robots and practicing Judo. My resume can be viewed [here](assets/pdf/CV.pdf).
+In my spare time I enjoy flipping (and eating) crepes, building robots and practicing Judo. <!-- My resume can be viewed [here](assets/pdf/CV.pdf). -->
