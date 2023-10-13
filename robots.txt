@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://seqwalt.github.io/sitemap.xml
