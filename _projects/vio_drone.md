@@ -46,7 +46,7 @@ Experiments were conducted in simulation ([Gazebo classic](https://docs.px4.io/m
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_vio_quad/rovio_sim.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project_vio_quad/rovio_sim.png" title="simulated experiment" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption text-justify">
@@ -55,7 +55,7 @@ Experiments were conducted in simulation ([Gazebo classic](https://docs.px4.io/m
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_vio_quad/lab_land_experiment.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project_vio_quad/lab_land_experiment.png" title="real world experiment" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption text-justify">
@@ -67,7 +67,7 @@ We can see that the FOV constrained trajectory allows the projected landing pad 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_vio_quad/land_metric1.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project_vio_quad/land_metric1.png" title="results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption text-justify">

@@ -10,14 +10,14 @@ category:
 **Code:** [monobot](https://github.com/seqwalt/monobot)<br>
 
 ### Overview
-"Monobot" is a differential-drive robot with a monocular camera that utilizes an extended Kalman filter (EKF) for pose estimation. AprilTag fiducial markers of known sizes are placed around the environment and detected by Monobot's camera. As the robot drives around the environment the AprilTag 3 algorithm [[1]](#1) estimates the pose of the markers in the camera frame, and provides this pose as a measurement to the EKF. The EKF then estimates the Monobot pose and AprilTag marker positions in the world frame.
+Monobot is a differential-drive robot with a monocular camera that utilizes an extended Kalman filter (EKF) for pose estimation. AprilTag fiducial markers of known sizes are placed around the environment and detected by Monobot's camera. As the robot drives around the environment the AprilTag 3 algorithm [[1]](#1) estimates the pose of the markers in the camera frame, and provides this pose as a measurement to the EKF. The EKF then estimates the Monobot pose and AprilTag marker positions in the world frame.
 
 ### Hardware
 Monobot consists of two continuous rotation servo motors, a Raspberry Pi (RPi) 3 model B+ running an Ubuntu 20.04 server, a 16 channel 12-bit PWM servo driver and a RPi camera module 2. Components are attached to black acrylic sheets, and the servos are attached using 3D-printed mounts. The robot body was designed in [OnShape](https://www.onshape.com/en/).
 
 <div class="row justify-content-md-center">
     <div class="col-9 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_monobot/monobot_annotated.png" title="view of quadcopter cameras and companion computer" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project_monobot/monobot_annotated.png" title="monobot anatomy" class="img-fluid rounded z-depth-1" %}
         <div class="caption text-justify">
           Figure 1: Monobot anatomy.
         </div>
