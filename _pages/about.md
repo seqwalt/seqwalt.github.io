@@ -16,10 +16,10 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-At ARA I work on the [OTONOS](https://www.ara.com/otonos/) project in the Integrated Products Division (Randolph, VT).
+At ARA I support the [OTONOS](https://www.ara.com/otonos/) project, making industrial and military vehicles teleoperable and autonomous. As a robotics software engineer, I love problem-solving at the intersection of hardware and software.
 
-Prior to ARA, I was a member of the Autonomous & Resilient Controls Laboratory ([ARC Lab](https://xu.me.wisc.edu/)) at [UW-Madison](https://www.wisc.edu/) where I conducted my master's research in control theory and robotic perception, advised by [Xiangru Xu](https://directory.engr.wisc.edu/display.php/Faculty/Xu_Xiangru/?page=me&search=Faculty&item=Xu_Xiangru). My [thesis](assets/pdf/SW_masters_thesis.pdf) work focuses on vision-based landing of a quadcopter with field-of-view constraints.
+Prior to ARA, I was a member of the Autonomous & Resilient Controls Laboratory ([ARC Lab](https://xu.me.wisc.edu/)) where I conducted my master's research in control theory and robotic perception. My [thesis](assets/pdf/SW_masters_thesis.pdf) work focuses on vision-based landing of a quadcopter with field-of-view constraints.
 
 <!-- Prior to joining UW-Madison as a student, I spent a [summer](https://gers.engr.wisc.edu/sure.php) there performing gait analysis for a robotic lower-limb prosthetic in the [UW BADGER Lab](https://uwbadgerlab.engr.wisc.edu/) directed by [Peter Adamczyk](https://uwbadgerlab.engr.wisc.edu/lab-members-new/peter-adamczyk/). I earned a bachelor's degree in physics at [West Chester University](https://www.wcupa.edu/) where I carried out aerosol characterization research with advisor [Kevin Aptowicz](https://www.wcupa.edu/sciences-mathematics/physics/kAptowicz/default.aspx). -->
 
-In my spare time I enjoy flipping (and eating) crepes, building robots and practicing Judo. My resume can be viewed [here](assets/pdf/Sequoyah_Walters_resume.pdf).
+In my spare time I enjoy flipping (and eating) crepes, building robots and playing guitar. My resume can be viewed [here](assets/pdf/Sequoyah_Walters_resume.pdf).
